@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -19,7 +18,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Calendar;
-import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
     Button addsale;
@@ -34,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayAdapter arrayAdapter1;
     ArrayAdapter arrayAdapter2;
         String[] s1={"Today","This week","This month","This quarter","This financial year","custom" };
-        String[] s2={"Sale & Cr.Note","Sale","Credit Note"};
+        String[] s2={"Purchase & Dr.Note","Purchase","Debit Note"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         addsale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(getApplicationContext(),Add_sale.class);
+                Intent i=new Intent(getApplicationContext(), Add_Purchase.class);
                 startActivity(i);
             }
         });

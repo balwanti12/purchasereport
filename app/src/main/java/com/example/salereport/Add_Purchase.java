@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Add_sale extends AppCompatActivity {
+public class Add_Purchase extends AppCompatActivity {
 
     EditText name;
     EditText total;
@@ -17,7 +17,7 @@ public class Add_sale extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_sale);
+        setContentView(R.layout.activity_add_purchase);
        name= findViewById(R.id.editText6);
        total=findViewById(R.id.editText7);
        save=findViewById(R.id.button2);
